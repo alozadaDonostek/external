@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickable Squares and Rectangles</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Increase the number of columns for tighter fit */
+  grid-auto-rows: 1fr; /* Make all rows consistent */
+  gap: 5px; /* Reduce the gap between items */
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  padding: 5px; /* Reduced padding */
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.small {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.smallwide {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.medium {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.large {
+  grid-column: span 4;
+  grid-row: span 4;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.blue {
+  background-color: #3498db;
+}
+
+.green {
+  background-color: #2ecc71;
+}
+
+.yellow {
+  background-color: #f1c40f;
+}
+
+.purple {
+  background-color: #9b59b6;
+}
+
+.orange {
+  background-color: #e67e22;
+}
+
+.teal {
+  background-color: #1abc9c;
+}
+
+.pink {
+  background-color:palevioletred;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.darkblue {
+  background-color:navy;
+}
+
+
+.box:hover {
+  opacity: 0.8;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="page1.html" class="box small red">Label 1</a>
+    <a href="page2.html" class="box large blue">Label 2</a>
+    <a href="page15.html" class="box small darkblue">Label 1.5</a>
+    <a href="page3.html" class="box medium green">Label 3</a>
+    <a href="page4.html" class="box smallwide yellow">Label 4</a>
+    <a href="page5.html" class="box medium purple">Label 5</a>
+    <a href="page6.html" class="box smallwide orange">Label 6</a>
+    <a href="page7.html" class="box small teal">Label 7</a>
+    <a href="page8.html" class="box small pink">Label 8</a>
+    <a href="page9.html" class="box small brown">Label 9</a>
+  </div>
+</body>
+</html>
